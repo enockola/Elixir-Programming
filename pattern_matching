@@ -1,0 +1,7 @@
+defmodule Matcher do
+  def describe({:ok, value}), do: "Success: #{value}"
+  def describe({:error, msg}), do: "Error: #{msg}"
+end
+
+IO.puts Matcher.describe({:ok, 42})
+IO.puts Matcher.describe({:error, "not found"})
