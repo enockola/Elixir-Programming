@@ -1,4 +1,12 @@
-# Project plan:
+# Current Calcularor Project Plan
+1. Build a calculator program that uses functions to perform calculations. Examples of calculations are, addition, subtraction, solve quadratic question.
+2. Add square/squareroot functions, add sine/cosine/logrithms functions to my calculator
+3. Make program interactive wher users can select 1, then select plus, and then another number.
+4. Add Pi to the calculator
+5. Create a way to store the unit circle on my calculator.
+
+
+# Tic Tac Toe Project plan:
 1. Read "Joy of Elixir" by Ryan Bigg. This will help me learn elixir concepts in a fun and engaging way. https://joyofelixir.com/i-but-who-is-this-book-for-really
 2. Choose from the list of things that I can do to improve the tic-tac-toe game
 3. Set small goals, like implementing one feature at a time.
