@@ -16,7 +16,18 @@ defmodule Calculator do
     else
       args = get_arguments(operation)
       result = run(args)
-      IO.inspect(result)
+      case result do
+        {:ok, {root1, root2}} ->
+          IO.puts("Real roots found:")
+          IO.puts("x₁ = #{root1}")
+          IO.puts("x₂ = #{root2}")
+
+        {:error, msg} ->
+          IO.puts("Error: #{msg}")
+
+        other ->
+          IO.puts("Result: #{other}")
+      end
 
       continue? = IO.gets("Do you want to calculate again? (yes/no): ") |> String.trim()
       if String.downcase(continue?) in ["yes", "y"], do: loop(), else: IO.puts("Thanks for using my Calculator!")
